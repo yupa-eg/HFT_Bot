@@ -1,0 +1,34 @@
+{
+  "name": "mm_integration",
+  "version": "0.9.1",
+  "description": "mm_integration",
+  "main": "app2.js",
+  "scripts": {
+    "start": "node app2",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-js": "browserify src/client_web_v0511.js -t babelify --outfile public/bundle.js",
+    "build-js-worker": "browserify src/client_web_v051_worker.js -t babelify --outfile public/bundle_worker.js",
+    "build-js-controller": "browserify src/controller.js -t babelify --outfile public/bundle_controller.js"
+  },
+  "author": "sinmetal",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.6.0",
+    "bignumber.js": "^6.0.0",
+    "browserify": "^16.1.0",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "influx": "^5.0.7",
+    "npm": "^5.7.1",
+    "readline-sync": "^1.4.9",
+    "request": "^2.83.0",
+    "rpc-websockets": "^4.0.2",
+    "selenium-webdriver": "^4.0.0-alpha.1",
+    "twit": "^2.2.9"
+  },
+  "devDependencies": {
+    "browserify": "^16.1.0",
+    "babel-core": "^6.26.0",
+    "babelify": "^8.0.0"
+  }
+}
